@@ -1,3 +1,7 @@
+.card-largura {
+    max-width: 18rem;
+}
+
 .imagem-carousel-um{
     
     object-fit: cover;
@@ -32,3 +36,13 @@
 .borda-cor-especial{
     border-color: darkred;
 }
+
+.card-posicao-imagem {
+    object-fit: cover;
+    /*object-position: 0% 80%;*/
+    height:  200px;
+}
+
+
+
+

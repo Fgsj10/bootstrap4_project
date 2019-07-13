@@ -14,7 +14,7 @@
 
 <header>
   <!--navbar ou seja menu superior-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <a class="navbar-brand" href="#">Fruta & Fruto</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
           <span class="navbar-toggler-icon"></span>
@@ -31,7 +31,7 @@
               <a class="nav-link" href="#">Quem somos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contatos</a>
+              <a class="nav-link" data-toggle="modal" data-target="#modal-contato" href="#">Contatos</a>
             </li>
           </ul>
         </div>
@@ -84,10 +84,11 @@
 </section>
   <!------------------------------->
 
-    <section id="receitas" >
+  <section class="container bg-light"  id="receitas" >
+    <div class="row justify-content-center"> 
   <!-- primeiro card receita-->
-      <article class="card borda-cor-especial" style="width: 18rem;">
-          <img class="card-img-top" src="src/img/receita-abacate.jpg" alt="tigela de abacate">
+      <article class="card borda-cor-especial card-largura p-0 m-4 col-12 col-md-4">
+          <img class="card-img-top card-posicao-imagem" src="src/img/receita-abacate.jpg" alt="tigela de abacate">
           <div class="card-body">
             <h5 class="card-title">Tigela de abacate</h5>
             <p class="card-text">Receita refrescante e cheia de vitaminas para o seu café da manhã!</p>
@@ -95,8 +96,8 @@
           </div>
       </article>
 
-      <article class="card borda-cor-especial" style="width: 18rem;">
-          <img class="card-img-top" src="src/img/receita-kiwi.jpg" alt="salada de kiwi">
+      <article class="card borda-cor-especial card-largura p-0 m-4 col-12 col-md-4">
+          <img class="card-img-top card-posicao-imagem" src="src/img/receita-kiwi.jpg" alt="salada de kiwi">
           <div class="card-body">
             <h5 class="card-title">Salada de kiwi</h5>
             <p class="card-text">Receita refrescante e cheia de vitaminas para o seu café da manhã!</p>
@@ -105,8 +106,8 @@
       </article>
 
 
-      <article class="card borda-cor-especial" style="width: 18rem;">
-          <img class="card-img-top" src="src/img/receita-mix.jpg" alt="mix de vegetais">
+      <article class="card borda-cor-especial card-largura p-0 m-4 col-12 col-md-4">
+          <img class="card-img-top card-posicao-imagem" src="src/img/receita-mix.jpg" alt="mix de vegetais">
           <div class="card-body">
             <h5 class="card-title"> Mix de vegetais</h5>
             <p class="card-text">Receita refrescante e cheia de vitaminas para o seu café da manhã!</p>
@@ -114,8 +115,8 @@
           </div>
       </article>
 
-      <article class="card borda-cor-especial" style="width: 18rem;">
-          <img class="card-img-top" src="src/img/receita-pimentoes.jpg" alt="pimentões">
+      <article class="card borda-cor-especial card-largura p-0 m-4 col-12 col-md-4">
+          <img class="card-img-top card-posicao-imagem" src="src/img/receita-pimentoes.jpg" alt="pimentões">
           <div class="card-body">
             <h5 class="card-title"> Pimentões à Juliana</h5>
             <p class="card-text">Receita refrescante e cheia de vitaminas para o seu café da manhã!</p>
@@ -123,8 +124,8 @@
           </div>
       </article>
 
-      <article class="card borda-cor-especial" style="width: 18rem;">
-          <img class="card-img-top" src="src/img/receita-oriental.jpg" alt="Prato oriental">
+      <article class="card borda-cor-especial card-largura p-0 m-4 col-12 col-md-4">
+          <img class="card-img-top card-posicao-imagem" src="src/img/receita-oriental.jpg" alt="Prato oriental">
           <div class="card-body">
             <h5 class="card-title"> Prato oriental</h5>
             <p class="card-text">Receita refrescante e cheia de vitaminas para o seu café da manhã!</p>
@@ -132,17 +133,39 @@
           </div>
       </article>
 
-      <article class="card borda-cor-especial" style="width: 18rem;">
-          <img class="card-img-top" src="src/img/receita-beterrabas.jpg" alt="Beterrabas">
+      <article class="card borda-cor-especial card-largura p-0 m-4 col-12 col-md-4">
+          <img class="card-img-top card-posicao-imagem" src="src/img/receita-beterrabas.jpg" alt="Beterrabas">
           <div class="card-body">
             <h5 class="card-title"> Beterrabas assadas </h5>
             <p class="card-text">Receita refrescante e cheia de vitaminas para o seu café da manhã!</p>
             <a href="#" class="btn botao-cor-especial">Veja a receita</a>
           </div>
       </article>
+    </div>
 
-    </section>
-  </main>
+  </section>
+</main>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="modal-contato" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Título do modal</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-primary">Salvar mudanças</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-------------------------->
 

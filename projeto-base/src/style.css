@@ -1,6 +1,16 @@
-.imagem-carousel{
+.imagem-carousel-um{
     
     object-fit: cover;
+    object-position: 0% 80%;
+    height:  400px;
+
+
+}
+
+.imagem-carousel-dois{
+    
+    object-fit: cover;
+    /*object-position: 0% 80%; */ 
     height:  400px;
 
 
